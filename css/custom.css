@@ -558,9 +558,9 @@ div#archive {
   padding: 20px 20px;
 }
 
-/* 页脚心跳动画 */
+/*页脚心跳动画*/
 #heartbeat {
-  color: red;
+  color: rgb(214, 30, 30);
   animation: iconAnimate 1s ease-in-out infinite;
 }
 @-moz-keyframes iconAnimate {
