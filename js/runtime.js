@@ -1,3 +1,4 @@
+//页脚倒计时js
 var now = new Date();
 function createtime() {
   // 当前时间
@@ -30,8 +31,8 @@ function createtime() {
   let currentTimeHtml = ""; 
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-    ? `<img class='boardsign' src='/svg/桂工-上课摸鱼啦.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold"> <i id="heartbeat" class='fas fa-heartbeat'></i> 和周宝在一起已经${dnm} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br>🚀本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 🚀</div>`
-    : `<img class='boardsign' src='/svg/桂工-下课休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold"> <i id="heartbeat" class='fas fa-heartbeat'></i> 和周宝在一起已经${dnm} 天 ${hnm} 小时 ${mnm} 分 ${snm} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br>🚀本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 🚀</div>`),
+    ? `<img class='boardsign' src='/svg/桂工-上课摸鱼啦.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold"> <br>🚀本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 🚀 <div style="font-size:13px;font-weight:bold"> </div><i id="heartbeat" class='fas fa-heartbeat'></i> 和周宝在一起已经${dnm} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i>`
+    : `<img class='boardsign' src='/svg/桂工-下课休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold"> <br>🚀本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 🚀 <div style="font-size:13px;font-weight:bold"> </div><i id="heartbeat" class='fas fa-heartbeat'></i> 和周宝在一起已经${dnm} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
